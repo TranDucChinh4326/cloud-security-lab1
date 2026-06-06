@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Website tĩnh Lab tuần 1 môn An toàn điện toán đám mây: Cloud Computing, Cloudflare Pages, CDN và kiểm tra an toàn cơ bản."
+    />
+    <title>Lab tuần 1 - An toàn điện toán đám mây</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark">AT</span>
+        <span>An toàn điện toán đám mây</span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="#members">Thành viên</a>
+        <a href="#content">Nội dung</a>
+        <a href="#security">An toàn</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">LAB THỰC HÀNH - KIỂM TRA TUẦN 1</p>
+          <h1 id="hero-title">Triển khai website tĩnh trên Cloudflare Pages</h1>
+          <p>
+            Website giới thiệu nhóm và tóm tắt các kiến thức nền tảng về cloud
+            computing, mô hình IaaS - PaaS - SaaS, CDN và các kiểm tra an toàn
+            cơ bản sau khi đưa trang lên môi trường cloud.
+          </p>
+          <div class="hero-actions" aria-label="Liên kết nhanh">
+            <a class="button primary" href="#content">Xem nội dung</a>
+            <a class="button secondary" href="#security">Checklist an toàn</a>
+          </div>
+        </div>
+
+        <figure class="cloud-figure" aria-label="Minh họa CDN phân phối nội dung">
+          <svg viewBox="0 0 620 420" role="img" aria-labelledby="diagram-title diagram-desc">
+            <title id="diagram-title">Sơ đồ website tĩnh trên CDN</title>
+            <desc id="diagram-desc">
+              Người dùng truy cập nội dung từ edge network, edge lấy dữ liệu từ website tĩnh.
+            </desc>
+            <defs>
+              <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#e0f2fe" />
+                <stop offset="100%" stop-color="#dcfce7" />
+              </linearGradient>
+            </defs>
+            <rect x="30" y="30" width="560" height="340" rx="22" fill="url(#panel)" />
+            <g fill="#0f172a" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+              <text x="90" y="95">Người dùng</text>
+              <text x="258" y="95">Cloudflare CDN</text>
+              <text x="442" y="95">Website tĩnh</text>
+            </g>
+            <g fill="#ffffff" stroke="#0369a1" stroke-width="3">
+              <circle cx="130" cy="185" r="48" />
+              <rect x="262" y="138" width="104" height="94" rx="18" />
+              <rect x="452" y="142" width="86" height="86" rx="14" />
+            </g>
+            <g stroke="#0f766e" stroke-width="5" stroke-linecap="round" fill="none">
+              <path d="M178 185 C210 170, 230 170, 262 185" />
+              <path d="M366 185 C402 170, 420 170, 452 185" />
+              <path d="M452 215 C416 242, 389 246, 348 224" stroke-dasharray="10 12" />
+              <path d="M274 224 C235 252, 205 250, 166 216" stroke-dasharray="10 12" />
+            </g>
+            <g fill="#0284c7">
+              <circle cx="130" cy="166" r="14" />
+              <path d="M103 218c7-23 47-23 54 0z" />
+              <circle cx="294" cy="172" r="11" />
+              <circle cx="334" cy="172" r="11" />
+              <rect x="288" y="198" width="52" height="10" rx="5" />
+              <path d="M470 165h50v12h-50zM470 188h50v12h-50zM470 211h34v12h-34z" />
+            </g>
+            <g fill="#475569" font-family="Arial, sans-serif" font-size="15">
+              <text x="73" y="292">Truy cập HTTPS</text>
+              <text x="245" y="292">Cache tại edge</text>
+              <text x="438" y="292">HTML/CSS/JS</text>
+            </g>
+          </svg>
+        </figure>
+      </section>
+
+      <section id="members" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Thông tin nhóm</p>
+          <h2>Thành viên thực hiện</h2>
+        </div>
+        <div class="member-grid">
+          <article class="member-card">
+            <h3>Thành viên 1</h3>
+            <p>MSSV: Điền MSSV</p>
+            <p>Vai trò: Tìm hiểu cloud computing và CDN.</p>
+          </article>
+          <article class="member-card">
+            <h3>Thành viên 2</h3>
+            <p>MSSV: Điền MSSV</p>
+            <p>Vai trò: Triển khai website và cấu hình Cloudflare Pages.</p>
+          </article>
+          <article class="member-card">
+            <h3>Thành viên 3</h3>
+            <p>MSSV: Điền MSSV</p>
+            <p>Vai trò: Kiểm tra Security Headers và PageSpeed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="content" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Nội dung chính</p>
+          <h2>Tóm tắt kiến thức Lab tuần 1</h2>
+        </div>
+        <div class="topic-list">
+          <article>
+            <h3>Cloud computing</h3>
+            <p>
+              Cloud computing là mô hình cung cấp tài nguyên công nghệ thông tin
+              qua Internet, giúp người dùng sử dụng hạ tầng, nền tảng hoặc phần
+              mềm mà không cần tự vận hành toàn bộ phần cứng vật lý.
+            </p>
+          </article>
+          <article>
+            <h3>IaaS - PaaS - SaaS</h3>
+            <p>
+              IaaS cung cấp hạ tầng như máy ảo và mạng; PaaS cung cấp nền tảng
+              triển khai ứng dụng; SaaS cung cấp phần mềm hoàn chỉnh cho người
+              dùng cuối.
+            </p>
+          </article>
+          <article>
+            <h3>Cloudflare Pages</h3>
+            <p>
+              Cloudflare Pages kết nối với repository Git, tự động build và
+              triển khai website tĩnh lên mạng edge của Cloudflare sau mỗi lần
+              cập nhật mã nguồn.
+            </p>
+          </article>
+          <article>
+            <h3>CDN</h3>
+            <p>
+              CDN lưu bản sao nội dung ở nhiều điểm phân phối gần người dùng,
+              giảm độ trễ, tăng tốc độ tải trang và hỗ trợ giảm tải cho máy chủ
+              gốc.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="security" class="section security-band">
+        <div class="section-heading">
+          <p class="eyebrow">Đánh giá an toàn</p>
+          <h2>Checklist sau khi deploy</h2>
+        </div>
+        <div class="checklist">
+          <label><input type="checkbox" checked /> Website sử dụng HTTPS mặc định.</label>
+          <label><input type="checkbox" checked /> Có file <code>_headers</code> cấu hình header bảo mật.</label>
+          <label><input type="checkbox" /> Kiểm tra điểm tại securityheaders.com.</label>
+          <label><input type="checkbox" /> Kiểm tra hiệu năng tại pagespeed.web.dev.</label>
+          <label><input type="checkbox" /> Ghi nhận rủi ro còn tồn tại và đề xuất giải pháp.</label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Lab tuần 1 - An toàn điện toán đám mây</p>
+      <p>Triển khai: GitHub + Cloudflare Pages</p>
+    </footer>
+  </body>
+</html>

@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Website tĩnh Lab tuần 1 môn An toàn điện toán đám mây: Cloud Computing, Cloudflare Pages, CDN và kiểm tra an toàn cơ bản."
-    />
+    <meta name="description" content="Website tĩnh giới thiệu nhóm và nội dung Lab tuần 1." />
     <title>Lab tuần 1 - An toàn điện toán đám mây</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -19,7 +16,6 @@
       <nav class="nav" aria-label="Điều hướng chính">
         <a href="#members">Thành viên</a>
         <a href="#content">Nội dung</a>
-        <a href="#security">An toàn</a>
       </nav>
     </header>
 
@@ -27,15 +23,15 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">LAB THỰC HÀNH - KIỂM TRA TUẦN 1</p>
-          <h1 id="hero-title">Triển khai website tĩnh trên Cloudflare Pages</h1>
+          <h1 id="hero-title">Website giới thiệu nhóm</h1>
           <p>
-            Website giới thiệu nhóm và tóm tắt các kiến thức nền tảng về cloud
-            computing, mô hình IaaS - PaaS - SaaS, CDN và các kiểm tra an toàn
-            cơ bản sau khi đưa trang lên môi trường cloud.
+            Trang web tĩnh được thực hiện cho Lab tuần 1 môn An toàn điện toán
+            đám mây. Nội dung gồm thông tin thành viên nhóm và phần tóm tắt chủ
+            đề chính của bài thực hành.
           </p>
           <div class="hero-actions" aria-label="Liên kết nhanh">
-            <a class="button primary" href="#content">Xem nội dung</a>
-            <a class="button secondary" href="#security">Checklist an toàn</a>
+            <a class="button primary" href="#members">Xem thành viên</a>
+            <a class="button secondary" href="#content">Xem nội dung</a>
           </div>
         </div>
 
@@ -107,55 +103,37 @@
       <section id="content" class="section">
         <div class="section-heading">
           <p class="eyebrow">Nội dung chính</p>
-          <h2>Tóm tắt kiến thức Lab tuần 1</h2>
+          <h2>Chủ đề thực hiện</h2>
         </div>
         <div class="topic-list">
           <article>
             <h3>Cloud computing</h3>
             <p>
-              Cloud computing là mô hình cung cấp tài nguyên công nghệ thông tin
-              qua Internet, giúp người dùng sử dụng hạ tầng, nền tảng hoặc phần
-              mềm mà không cần tự vận hành toàn bộ phần cứng vật lý.
-            </p>
-          </article>
-          <article>
-            <h3>IaaS - PaaS - SaaS</h3>
-            <p>
-              IaaS cung cấp hạ tầng như máy ảo và mạng; PaaS cung cấp nền tảng
-              triển khai ứng dụng; SaaS cung cấp phần mềm hoàn chỉnh cho người
-              dùng cuối.
+              Tìm hiểu khái niệm điện toán đám mây và các mô hình dịch vụ cơ
+              bản như IaaS, PaaS, SaaS.
             </p>
           </article>
           <article>
             <h3>Cloudflare Pages</h3>
             <p>
-              Cloudflare Pages kết nối với repository Git, tự động build và
-              triển khai website tĩnh lên mạng edge của Cloudflare sau mỗi lần
-              cập nhật mã nguồn.
+              Sử dụng Cloudflare Pages để triển khai website tĩnh từ repository
+              GitHub.
             </p>
           </article>
           <article>
             <h3>CDN</h3>
             <p>
-              CDN lưu bản sao nội dung ở nhiều điểm phân phối gần người dùng,
-              giảm độ trễ, tăng tốc độ tải trang và hỗ trợ giảm tải cho máy chủ
-              gốc.
+              Tìm hiểu cách CDN phân phối nội dung từ máy chủ gần người dùng để
+              cải thiện tốc độ truy cập.
             </p>
           </article>
-        </div>
-      </section>
-
-      <section id="security" class="section security-band">
-        <div class="section-heading">
-          <p class="eyebrow">Đánh giá an toàn</p>
-          <h2>Checklist sau khi deploy</h2>
-        </div>
-        <div class="checklist">
-          <label><input type="checkbox" checked /> Website sử dụng HTTPS mặc định.</label>
-          <label><input type="checkbox" checked /> Có file <code>_headers</code> cấu hình header bảo mật.</label>
-          <label><input type="checkbox" /> Kiểm tra điểm tại securityheaders.com.</label>
-          <label><input type="checkbox" /> Kiểm tra hiệu năng tại pagespeed.web.dev.</label>
-          <label><input type="checkbox" /> Ghi nhận rủi ro còn tồn tại và đề xuất giải pháp.</label>
+          <article>
+            <h3>Kiểm tra sau triển khai</h3>
+            <p>
+              Sau khi deploy, nhóm kiểm tra website bằng Security Headers và
+              PageSpeed Insights để ghi nhận kết quả trong báo cáo.
+            </p>
+          </article>
         </div>
       </section>
     </main>

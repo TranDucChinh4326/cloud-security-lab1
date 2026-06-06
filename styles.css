@@ -196,8 +196,7 @@ h3 {
 }
 
 .member-grid,
-.topic-list,
-.checklist {
+.topic-list {
   display: grid;
   gap: 16px;
 }
@@ -226,31 +225,6 @@ h3 {
 
 .topic-list {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.security-band {
-  background: #eef6f1;
-}
-
-.checklist {
-  max-width: 860px;
-}
-
-.checklist label {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 14px 16px;
-  border: 1px solid #b7d8c7;
-  border-radius: 8px;
-  background: var(--white);
-}
-
-.checklist input {
-  width: 18px;
-  height: 18px;
-  margin-top: 3px;
-  accent-color: var(--green);
 }
 
 code {
